@@ -1,0 +1,130 @@
+{
+  "n_rows": 150,
+  "n_columns": 6,
+  "target_type": "classification",
+  "features": {
+    "SepalLengthCm": {
+      "feature": "SepalLengthCm",
+      "dtype": "float64",
+      "n_missing": 0,
+      "min": 4.3,
+      "max": 7.9,
+      "mean": 5.843333333333334,
+      "target_type_used": "classification",
+      "anova_p": 1.6696691907693666e-31,
+      "mutual_info_classif": 0.4812627520459585
+    },
+    "SepalWidthCm": {
+      "feature": "SepalWidthCm",
+      "dtype": "float64",
+      "n_missing": 0,
+      "min": 2.0,
+      "max": 4.4,
+      "mean": 3.0540000000000003,
+      "target_type_used": "classification",
+      "anova_p": 1.3279165184572045e-16,
+      "mutual_info_classif": 0.23966764853457434
+    },
+    "PetalLengthCm": {
+      "feature": "PetalLengthCm",
+      "dtype": "float64",
+      "n_missing": 0,
+      "min": 1.0,
+      "max": 6.9,
+      "mean": 3.758666666666666,
+      "target_type_used": "classification",
+      "anova_p": 3.051975801827421e-91,
+      "mutual_info_classif": 0.9887022718368657
+    },
+    "PetalWidthCm": {
+      "feature": "PetalWidthCm",
+      "dtype": "float64",
+      "n_missing": 0,
+      "min": 0.1,
+      "max": 2.5,
+      "mean": 1.1986666666666668,
+      "target_type_used": "classification",
+      "anova_p": 4.3769569574903335e-85,
+      "mutual_info_classif": 0.9824945948113633
+    }
+  },
+  "skipped_columns": {
+    "Id": {
+      "feature": "Id",
+      "role": "identifier",
+      "dtype": "int64",
+      "n_unique": 150,
+      "n_missing": 0
+    }
+  },
+  "baseline": {
+    "features": [
+      "SepalLengthCm",
+      "SepalWidthCm",
+      "PetalLengthCm",
+      "PetalWidthCm"
+    ],
+    "target_type": "classification",
+    "cv_folds_used": 5,
+    "cv_mean": 0.9666666666666668,
+    "cv_std": 0.02108185106778919,
+    "importances": {
+      "PetalLengthCm": 0.46044473961715215,
+      "PetalWidthCm": 0.42411626512710127,
+      "SepalLengthCm": 0.09090795402103087,
+      "SepalWidthCm": 0.024531041234715757
+    },
+    "cv_accuracy": 0.9666666666666667,
+    "confusion_matrix": [
+      [
+        50,
+        0,
+        0
+      ],
+      [
+        0,
+        47,
+        3
+      ],
+      [
+        0,
+        2,
+        48
+      ]
+    ],
+    "classification_report": {
+      "Iris-setosa": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 50.0
+      },
+      "Iris-versicolor": {
+        "precision": 0.9591836734693877,
+        "recall": 0.94,
+        "f1-score": 0.9494949494949495,
+        "support": 50.0
+      },
+      "Iris-virginica": {
+        "precision": 0.9411764705882353,
+        "recall": 0.96,
+        "f1-score": 0.9504950495049505,
+        "support": 50.0
+      },
+      "accuracy": 0.9666666666666667,
+      "macro avg": {
+        "precision": 0.9667867146858743,
+        "recall": 0.9666666666666667,
+        "f1-score": 0.9666633329999667,
+        "support": 150.0
+      },
+      "weighted avg": {
+        "precision": 0.9667867146858743,
+        "recall": 0.9666666666666667,
+        "f1-score": 0.9666633329999667,
+        "support": 150.0
+      }
+    },
+    "roc_auc_ovr_macro": 0.9952333333333332
+  }
+}

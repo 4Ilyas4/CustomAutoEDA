@@ -1,0 +1,104 @@
+{
+  "features": [
+    "Ticket_freq",
+    "Cabin_freq",
+    "Title_freq",
+    "Pclass",
+    "Age",
+    "SibSp",
+    "Parch",
+    "Fare",
+    "FamilySize",
+    "Age_imputed",
+    "Age_missing_flag",
+    "Ticket_freq",
+    "Cabin_freq",
+    "Title_freq",
+    "Sex_female",
+    "Sex_male",
+    "Embarked_C",
+    "Embarked_Q",
+    "Embarked_S",
+    "Embarked_nan",
+    "Deck_A",
+    "Deck_B",
+    "Deck_C",
+    "Deck_D",
+    "Deck_E",
+    "Deck_F",
+    "Deck_G",
+    "Deck_Missing",
+    "Deck_T"
+  ],
+  "target_type": "classification",
+  "cv_folds_used": 5,
+  "cv_mean": 0.8103383340656581,
+  "cv_std": 0.04248524271587822,
+  "importances": {
+    "Fare": 0.15442027194371302,
+    "Title_freq": 0.08988543992459062,
+    "Age_imputed": 0.1001982496002438,
+    "Age": 0.09749320545329225,
+    "Sex_female": 0.08020049855983492,
+    "Sex_male": 0.05759520392871042,
+    "Pclass": 0.04838391448067188,
+    "FamilySize": 0.03689934830762339,
+    "Ticket_freq": 0.034245164494116735,
+    "Cabin_freq": 0.02039523327844557,
+    "SibSp": 0.024202597283896194,
+    "Parch": 0.015864281328147024,
+    "Embarked_S": 0.012302352027296525,
+    "Embarked_C": 0.012008044931142737,
+    "Deck_Missing": 0.010769571396669843,
+    "Age_missing_flag": 0.009541991019004355,
+    "Embarked_Q": 0.0063071808650290015,
+    "Deck_E": 0.006235621917736339,
+    "Deck_C": 0.005322806832048952,
+    "Deck_B": 0.004794862595033084,
+    "Deck_D": 0.004108152806542661,
+    "Deck_A": 0.001612439681372539,
+    "Deck_F": 0.0008533954447056473,
+    "Deck_G": 0.0008365734064171378,
+    "Deck_T": 0.0001265334894578508,
+    "Embarked_nan": 1.6165332709217234e-05
+  },
+  "cv_accuracy": 0.8103254769921436,
+  "confusion_matrix": [
+    [
+      471,
+      78
+    ],
+    [
+      91,
+      251
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 0.8380782918149466,
+      "recall": 0.8579234972677595,
+      "f1-score": 0.8478847884788479,
+      "support": 549.0
+    },
+    "1": {
+      "precision": 0.7629179331306991,
+      "recall": 0.7339181286549707,
+      "f1-score": 0.7481371087928465,
+      "support": 342.0
+    },
+    "accuracy": 0.8103254769921436,
+    "macro avg": {
+      "precision": 0.8004981124728229,
+      "recall": 0.7959208129613651,
+      "f1-score": 0.7980109486358471,
+      "support": 891.0
+    },
+    "weighted avg": {
+      "precision": 0.8092288612088718,
+      "recall": 0.8103254769921436,
+      "f1-score": 0.8095978003165443,
+      "support": 891.0
+    }
+  },
+  "roc_auc": 0.8639951426836674
+}

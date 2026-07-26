@@ -1,0 +1,70 @@
+{
+  "features": [
+    "SepalLengthCm",
+    "SepalWidthCm",
+    "PetalLengthCm",
+    "PetalWidthCm"
+  ],
+  "target_type": "classification",
+  "cv_folds_used": 5,
+  "cv_mean": 0.9666666666666668,
+  "cv_std": 0.02108185106778919,
+  "importances": {
+    "PetalLengthCm": 0.46044473961715215,
+    "PetalWidthCm": 0.42411626512710127,
+    "SepalLengthCm": 0.09090795402103087,
+    "SepalWidthCm": 0.024531041234715757
+  },
+  "cv_accuracy": 0.9666666666666667,
+  "confusion_matrix": [
+    [
+      50,
+      0,
+      0
+    ],
+    [
+      0,
+      47,
+      3
+    ],
+    [
+      0,
+      2,
+      48
+    ]
+  ],
+  "classification_report": {
+    "Iris-setosa": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 50.0
+    },
+    "Iris-versicolor": {
+      "precision": 0.9591836734693877,
+      "recall": 0.94,
+      "f1-score": 0.9494949494949495,
+      "support": 50.0
+    },
+    "Iris-virginica": {
+      "precision": 0.9411764705882353,
+      "recall": 0.96,
+      "f1-score": 0.9504950495049505,
+      "support": 50.0
+    },
+    "accuracy": 0.9666666666666667,
+    "macro avg": {
+      "precision": 0.9667867146858743,
+      "recall": 0.9666666666666667,
+      "f1-score": 0.9666633329999667,
+      "support": 150.0
+    },
+    "weighted avg": {
+      "precision": 0.9667867146858743,
+      "recall": 0.9666666666666667,
+      "f1-score": 0.9666633329999667,
+      "support": 150.0
+    }
+  },
+  "roc_auc_ovr_macro": 0.9952333333333332
+}

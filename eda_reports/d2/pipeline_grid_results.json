@@ -1,0 +1,58 @@
+{
+  "best_params": {
+    "estimator__learning_rate": 0.05,
+    "estimator__n_estimators": 50
+  },
+  "best_score": NaN,
+  "confusion_matrix": [
+    [
+      50,
+      0,
+      0
+    ],
+    [
+      0,
+      50,
+      0
+    ],
+    [
+      0,
+      4,
+      46
+    ]
+  ],
+  "classification_report": {
+    "Iris-setosa": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 50.0
+    },
+    "Iris-versicolor": {
+      "precision": 0.9259259259259259,
+      "recall": 1.0,
+      "f1-score": 0.9615384615384616,
+      "support": 50.0
+    },
+    "Iris-virginica": {
+      "precision": 1.0,
+      "recall": 0.92,
+      "f1-score": 0.9583333333333334,
+      "support": 50.0
+    },
+    "accuracy": 0.9733333333333334,
+    "macro avg": {
+      "precision": 0.9753086419753086,
+      "recall": 0.9733333333333333,
+      "f1-score": 0.9732905982905984,
+      "support": 150.0
+    },
+    "weighted avg": {
+      "precision": 0.9753086419753086,
+      "recall": 0.9733333333333334,
+      "f1-score": 0.9732905982905984,
+      "support": 150.0
+    }
+  },
+  "roc_auc_ovr_macro": 0.9991333333333334
+}

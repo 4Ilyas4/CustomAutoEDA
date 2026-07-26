@@ -1,0 +1,165 @@
+{
+  "features": [
+    "Country_freq",
+    "City_freq",
+    "AQI Value",
+    "CO AQI Value",
+    "Ozone AQI Value",
+    "NO2 AQI Value",
+    "PM2.5 AQI Value",
+    "lat",
+    "lng",
+    "Country_freq",
+    "City_freq",
+    "CO AQI Category_Good",
+    "CO AQI Category_Moderate",
+    "CO AQI Category_Unhealthy for Sensitive Groups",
+    "Ozone AQI Category_Good",
+    "Ozone AQI Category_Moderate",
+    "Ozone AQI Category_Unhealthy",
+    "Ozone AQI Category_Unhealthy for Sensitive Groups",
+    "Ozone AQI Category_Very Unhealthy",
+    "NO2 AQI Category_Good",
+    "NO2 AQI Category_Moderate",
+    "PM2.5 AQI Category_Good",
+    "PM2.5 AQI Category_Hazardous",
+    "PM2.5 AQI Category_Moderate",
+    "PM2.5 AQI Category_Unhealthy",
+    "PM2.5 AQI Category_Unhealthy for Sensitive Groups",
+    "PM2.5 AQI Category_Very Unhealthy"
+  ],
+  "target_type": "classification",
+  "cv_folds_used": 5,
+  "cv_mean": 0.9998203054806828,
+  "cv_std": 0.00023959269242288526,
+  "importances": {
+    "AQI Value": 0.3036414730844017,
+    "PM2.5 AQI Value": 0.19165256644332374,
+    "PM2.5 AQI Category_Good": 0.18710226466205182,
+    "PM2.5 AQI Category_Moderate": 0.1433280063526085,
+    "PM2.5 AQI Category_Unhealthy": 0.0423721871359979,
+    "PM2.5 AQI Category_Unhealthy for Sensitive Groups": 0.03832001401954118,
+    "CO AQI Value": 0.026918060474384456,
+    "Ozone AQI Value": 0.01703002358322649,
+    "Ozone AQI Category_Good": 0.009738259843043226,
+    "Ozone AQI Category_Moderate": 0.007582498350181423,
+    "PM2.5 AQI Category_Very Unhealthy": 0.005789855518654943,
+    "lat": 0.00512359997827829,
+    "NO2 AQI Value": 0.004633282671860706,
+    "lng": 0.003874668834254261,
+    "Ozone AQI Category_Unhealthy": 0.003215062621634388,
+    "PM2.5 AQI Category_Hazardous": 0.0023419860008643246,
+    "Country_freq": 0.0016004089450701961,
+    "Ozone AQI Category_Unhealthy for Sensitive Groups": 0.0019977542883758306,
+    "Ozone AQI Category_Very Unhealthy": 0.0011314984664941576,
+    "City_freq": 0.00017112794375096448,
+    "NO2 AQI Category_Good": 5.042825783737641e-05,
+    "NO2 AQI Category_Moderate": 3.7593246520968106e-05,
+    "CO AQI Category_Unhealthy for Sensitive Groups": 3.517599092196563e-05,
+    "CO AQI Category_Good": 1.2576590571811767e-05,
+    "CO AQI Category_Moderate": 1.138551885967735e-05
+  },
+  "cv_accuracy": 0.9998203054806828,
+  "confusion_matrix": [
+    [
+      7708,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      62,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      7054,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      871,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      868,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2,
+      0,
+      129
+    ]
+  ],
+  "classification_report": {
+    "Good": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 7708.0
+    },
+    "Hazardous": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 62.0
+    },
+    "Moderate": {
+      "precision": 0.9998582565556343,
+      "recall": 1.0,
+      "f1-score": 0.9999291232546601,
+      "support": 7054.0
+    },
+    "Unhealthy": {
+      "precision": 0.997709049255441,
+      "recall": 1.0,
+      "f1-score": 0.9988532110091743,
+      "support": 871.0
+    },
+    "Unhealthy for Sensitive Groups": {
+      "precision": 1.0,
+      "recall": 0.998849252013809,
+      "f1-score": 0.9994242947610823,
+      "support": 869.0
+    },
+    "Very Unhealthy": {
+      "precision": 1.0,
+      "recall": 0.9847328244274809,
+      "f1-score": 0.9923076923076923,
+      "support": 131.0
+    },
+    "accuracy": 0.9998203054806828,
+    "macro avg": {
+      "precision": 0.9995945509685126,
+      "recall": 0.9972636794068817,
+      "f1-score": 0.9984190535554349,
+      "support": 16695.0
+    },
+    "weighted avg": {
+      "precision": 0.9998205884183846,
+      "recall": 0.9998203054806828,
+      "f1-score": 0.9998198982969182,
+      "support": 16695.0
+    }
+  },
+  "roc_auc_ovr_macro": 0.9999987731039189
+}

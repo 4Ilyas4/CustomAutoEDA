@@ -1,0 +1,12 @@
+pandas
+numpy
+matplotlib
+seaborn
+scipy
+scikit-learn
+category_encoders
+imbalanced-learn
+# Optional/advanced: xgboost, lightgbm, catboost
+# xgboost
+# lightgbm
+# catboost

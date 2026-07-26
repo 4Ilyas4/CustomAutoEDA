@@ -1,0 +1,353 @@
+{
+  "n_rows": 16695,
+  "n_columns": 14,
+  "target_type": "classification",
+  "features": {
+    "AQI Value": {
+      "feature": "AQI Value",
+      "dtype": "int64",
+      "n_missing": 0,
+      "min": 7.0,
+      "max": 500.0,
+      "mean": 62.99868224019168,
+      "target_type_used": "classification",
+      "anova_p": 0.0,
+      "mutual_info_classif": 1.0877213667496946
+    },
+    "CO AQI Value": {
+      "feature": "CO AQI Value",
+      "dtype": "int64",
+      "n_missing": 0,
+      "min": 0.0,
+      "max": 133.0,
+      "mean": 1.3421383647798741,
+      "target_type_used": "classification",
+      "anova_p": 0.0,
+      "mutual_info_classif": 0.2439085306057862
+    },
+    "CO AQI Category": {
+      "feature": "CO AQI Category",
+      "dtype": "object",
+      "n_unique": 3,
+      "n_missing": 0,
+      "top_values": {
+        "Good": 16691,
+        "Unhealthy for Sensitive Groups": 3,
+        "Moderate": 1
+      },
+      "target_type_used": "classification",
+      "chi2_p": 1.0997867015987413e-193,
+      "cramers_v": 0.1670182456754104,
+      "mutual_info_classif": 0.0
+    },
+    "Ozone AQI Value": {
+      "feature": "Ozone AQI Value",
+      "dtype": "int64",
+      "n_missing": 0,
+      "min": 0.0,
+      "max": 222.0,
+      "mean": 31.767355495657384,
+      "target_type_used": "classification",
+      "anova_p": 0.0,
+      "mutual_info_classif": 0.13598437531575658
+    },
+    "Ozone AQI Category": {
+      "feature": "Ozone AQI Category",
+      "dtype": "object",
+      "n_unique": 5,
+      "n_missing": 0,
+      "top_values": {
+        "Good": 15529,
+        "Moderate": 806,
+        "Unhealthy for Sensitive Groups": 176,
+        "Unhealthy": 159,
+        "Very Unhealthy": 25
+      },
+      "target_type_used": "classification",
+      "chi2_p": 0.0,
+      "cramers_v": 0.3447145787430706,
+      "mutual_info_classif": 0.09285724375112192
+    },
+    "NO2 AQI Value": {
+      "feature": "NO2 AQI Value",
+      "dtype": "int64",
+      "n_missing": 0,
+      "min": 0.0,
+      "max": 91.0,
+      "mean": 3.8196466007786762,
+      "target_type_used": "classification",
+      "anova_p": 0.0,
+      "mutual_info_classif": 0.08621833082385999
+    },
+    "NO2 AQI Category": {
+      "feature": "NO2 AQI Category",
+      "dtype": "object",
+      "n_unique": 2,
+      "n_missing": 0,
+      "top_values": {
+        "Good": 16684,
+        "Moderate": 11
+      },
+      "target_type_used": "classification",
+      "chi2_p": 8.885148578182655e-191,
+      "cramers_v": 0.2312718947158087,
+      "mutual_info_classif": 0.00018568415792596937
+    },
+    "PM2.5 AQI Value": {
+      "feature": "PM2.5 AQI Value",
+      "dtype": "int64",
+      "n_missing": 0,
+      "min": 0.0,
+      "max": 500.0,
+      "mean": 59.821323749625634,
+      "target_type_used": "classification",
+      "anova_p": 0.0,
+      "mutual_info_classif": 0.990615747582196
+    },
+    "PM2.5 AQI Category": {
+      "feature": "PM2.5 AQI Category",
+      "dtype": "object",
+      "n_unique": 6,
+      "n_missing": 0,
+      "top_values": {
+        "Good": 7936,
+        "Moderate": 6882,
+        "Unhealthy for Sensitive Groups": 881,
+        "Unhealthy": 828,
+        "Very Unhealthy": 115,
+        "Hazardous": 53
+      },
+      "target_type_used": "classification",
+      "chi2_p": 0.0,
+      "cramers_v": 0.932412661613838,
+      "mutual_info_classif": 0.9845186856067378
+    },
+    "lat": {
+      "feature": "lat",
+      "dtype": "float64",
+      "n_missing": 0,
+      "min": -54.8019,
+      "max": 70.767,
+      "mean": 30.267147906558847,
+      "target_type_used": "classification",
+      "anova_p": 3.633088884379442e-76,
+      "mutual_info_classif": 0.17582563781180682
+    },
+    "lng": {
+      "feature": "lng",
+      "dtype": "float64",
+      "n_missing": 0,
+      "min": -171.75,
+      "max": 178.0178,
+      "mean": -3.9444847738843962,
+      "target_type_used": "classification",
+      "anova_p": 4.380830319911835e-183,
+      "mutual_info_classif": 0.19041817357297752
+    }
+  },
+  "skipped_columns": {
+    "Country": {
+      "feature": "Country",
+      "role": "text",
+      "dtype": "object",
+      "n_unique": 175,
+      "n_missing": 302,
+      "top_values": {
+        "United States of America": 3954,
+        "Germany": 1072,
+        "Brazil": 890,
+        "Russian Federation": 889,
+        "Italy": 866,
+        "India": 794,
+        "Japan": 498,
+        "United Kingdom of Great Britain and Northern Ireland": 454,
+        "France": 454,
+        "China": 431
+      }
+    },
+    "City": {
+      "feature": "City",
+      "role": "text",
+      "dtype": "object",
+      "n_unique": 14229,
+      "n_missing": 0,
+      "top_values": {
+        "Santa Cruz": 17,
+        "San Fernando": 16,
+        "Santa Ana": 15,
+        "San Juan": 14,
+        "Victoria": 12,
+        "Washington": 12,
+        "Springfield": 12,
+        "San Isidro": 12,
+        "Pilar": 11,
+        "San Miguel": 11
+      }
+    }
+  },
+  "baseline": {
+    "features": [
+      "Country_freq",
+      "City_freq",
+      "AQI Value",
+      "CO AQI Value",
+      "Ozone AQI Value",
+      "NO2 AQI Value",
+      "PM2.5 AQI Value",
+      "lat",
+      "lng",
+      "Country_freq",
+      "City_freq",
+      "CO AQI Category_Good",
+      "CO AQI Category_Moderate",
+      "CO AQI Category_Unhealthy for Sensitive Groups",
+      "Ozone AQI Category_Good",
+      "Ozone AQI Category_Moderate",
+      "Ozone AQI Category_Unhealthy",
+      "Ozone AQI Category_Unhealthy for Sensitive Groups",
+      "Ozone AQI Category_Very Unhealthy",
+      "NO2 AQI Category_Good",
+      "NO2 AQI Category_Moderate",
+      "PM2.5 AQI Category_Good",
+      "PM2.5 AQI Category_Hazardous",
+      "PM2.5 AQI Category_Moderate",
+      "PM2.5 AQI Category_Unhealthy",
+      "PM2.5 AQI Category_Unhealthy for Sensitive Groups",
+      "PM2.5 AQI Category_Very Unhealthy"
+    ],
+    "target_type": "classification",
+    "cv_folds_used": 5,
+    "cv_mean": 0.9998203054806828,
+    "cv_std": 0.00023959269242288526,
+    "importances": {
+      "AQI Value": 0.3036414730844017,
+      "PM2.5 AQI Value": 0.19165256644332374,
+      "PM2.5 AQI Category_Good": 0.18710226466205182,
+      "PM2.5 AQI Category_Moderate": 0.1433280063526085,
+      "PM2.5 AQI Category_Unhealthy": 0.0423721871359979,
+      "PM2.5 AQI Category_Unhealthy for Sensitive Groups": 0.03832001401954118,
+      "CO AQI Value": 0.026918060474384456,
+      "Ozone AQI Value": 0.01703002358322649,
+      "Ozone AQI Category_Good": 0.009738259843043226,
+      "Ozone AQI Category_Moderate": 0.007582498350181423,
+      "PM2.5 AQI Category_Very Unhealthy": 0.005789855518654943,
+      "lat": 0.00512359997827829,
+      "NO2 AQI Value": 0.004633282671860706,
+      "lng": 0.003874668834254261,
+      "Ozone AQI Category_Unhealthy": 0.003215062621634388,
+      "PM2.5 AQI Category_Hazardous": 0.0023419860008643246,
+      "Country_freq": 0.0016004089450701961,
+      "Ozone AQI Category_Unhealthy for Sensitive Groups": 0.0019977542883758306,
+      "Ozone AQI Category_Very Unhealthy": 0.0011314984664941576,
+      "City_freq": 0.00017112794375096448,
+      "NO2 AQI Category_Good": 5.042825783737641e-05,
+      "NO2 AQI Category_Moderate": 3.7593246520968106e-05,
+      "CO AQI Category_Unhealthy for Sensitive Groups": 3.517599092196563e-05,
+      "CO AQI Category_Good": 1.2576590571811767e-05,
+      "CO AQI Category_Moderate": 1.138551885967735e-05
+    },
+    "cv_accuracy": 0.9998203054806828,
+    "confusion_matrix": [
+      [
+        7708,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        62,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        7054,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        871,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        868,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0,
+        129
+      ]
+    ],
+    "classification_report": {
+      "Good": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 7708.0
+      },
+      "Hazardous": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 62.0
+      },
+      "Moderate": {
+        "precision": 0.9998582565556343,
+        "recall": 1.0,
+        "f1-score": 0.9999291232546601,
+        "support": 7054.0
+      },
+      "Unhealthy": {
+        "precision": 0.997709049255441,
+        "recall": 1.0,
+        "f1-score": 0.9988532110091743,
+        "support": 871.0
+      },
+      "Unhealthy for Sensitive Groups": {
+        "precision": 1.0,
+        "recall": 0.998849252013809,
+        "f1-score": 0.9994242947610823,
+        "support": 869.0
+      },
+      "Very Unhealthy": {
+        "precision": 1.0,
+        "recall": 0.9847328244274809,
+        "f1-score": 0.9923076923076923,
+        "support": 131.0
+      },
+      "accuracy": 0.9998203054806828,
+      "macro avg": {
+        "precision": 0.9995945509685126,
+        "recall": 0.9972636794068817,
+        "f1-score": 0.9984190535554349,
+        "support": 16695.0
+      },
+      "weighted avg": {
+        "precision": 0.9998205884183846,
+        "recall": 0.9998203054806828,
+        "f1-score": 0.9998198982969182,
+        "support": 16695.0
+      }
+    },
+    "roc_auc_ovr_macro": 0.9999987731039189
+  }
+}
